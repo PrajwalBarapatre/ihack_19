@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link href="css/agency.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+    <title>Hello, world!</title>
+  </head>
+
+
+  <style type="text/css">
+  /*.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}*/
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+      z-index: 2;
+      margin: 0px;
+}
+
+nav ul {
+
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0,0,0,0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0px;
+      text-align: right;
+      margin: 0px;
+      
+      transition: 0.3s;
+}
+nav.black ul {
+      background:#001e28 ;
+      opacity: 1;
+}
+
+nav ul li {
+  
+      display: inline-block;
+      padding: 12px 16px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+}
+.menu{
+
+}
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+        width: 100%;
+            max-height: 0px;
+            background: #001e28;
+      }
+
+      nav.black ul {
+            background: #001e28;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+      
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+  /*.menu-link{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    background-color: #1a1326;
+    display: none;
+    cursor: pointer;
+}*/
+    .schedule{
+    border-collapse: collapse;
+    max-width:50%;
+    margin: auto;
+    
+    background-color: #3eaad1 ;
+}
+.schedule th{
+border: none;
+padding: 10px;
+color: white;
+}
+.schedule tr:nth-child(odd){
+    background-color: #292bb2 ;
+}
+
+.schedule tr:hover{
+    background-color: #1d404c ;
+}
+
+/*nav ul li a{
+  color:#c5cbdb; 
+}*/
+/*nav.black ul{
+  background: #000;
+}
+/*@media(max-width: 786px){
+  .menu-link{
+    display:block; 
+  }
+  nav ul{
+    display: none;
+    background: #000;
+  }
+  nav.black ul{
+    background: #000;
+  }
+  nav ul li {
+    width: 100%;
+    
+    text-align: center;
+  }
+  .active{
+    display: block;
+  }
+}*/
+.butt{
+  background-color: #9fc3cc;
+}
+.butt:hover{
+background-color: #59a4bf !important;
+margin-bottom: 0px !important;
+}
+
+/*.question {
+  width: 70%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.answer{
+  width: 70%;
+  background-color: #f4e5c3;
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0 18px;
+  transition: max-height 0.2s ease-out;
+}
+.select,.question:hover{
+  background-color: #53747c;*/
+  .accordion {
+    background-color: transparent;
+
+    color: #1f1f21;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    border: 0px solid #424244 ;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #117889;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #1f1f21;
+    font-weight: bolder;
+    float: right;
+    margin-left: 5px;
+    background-color: ;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+  font-size: 18px;
+  text-align: left;
+  margin: auto;
+  width: 60%;
+    padding: 0 18px;
+    background-color: #5087b7;
+    opacity: 0.95;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #003bff ;
+}
+.panel p{
+  font-size: 18px;
+}
+}
+  </style>
+  <body style="background-color:#59a4bf;">
+    <!-- <div>
+      <nav style="width: 100%;background-color: transparent;top: 0px;left: 0px;">
+      <div class="menu-link"  >
+        
+        <i class="fa fa-bars"  style="font-size: 24px;"></i>
+      
+      </div>
+      <div class="menu">
+      <ul  style="padding: 10px;text-decoration: none;margin-bottom: 0px;text-align: right;margin-top: 0px; overflow: hidden;">
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#" style="text-decoration: none;">Home</a></li>
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#"style="text-decoration: none;">About</a></li>
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#"style="text-decoration: none;">Register</a></li>
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#"style="text-decoration: none;">Incentives</a></li>
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#"style="text-decoration: none;">Problem Stattement</a></li>
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#"style="text-decoration: none;">Rules</a></li>
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#"style="text-decoration: none;">Sponsors</a></li>
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#"style="text-decoration: none;">FAQs</a></li>
+        <li style="display: inline-block;list-style: none;padding: 5px;margin-right: 5px;margin-left: 5px;"><a href="#"style="text-decoration: none;">Contact</a></li>
+        
+      </ul>
+    </div>
+    </nav>
+    
+    </div> -->
+    <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <!-- <div class="logo">
+                  LOGO
+               </div> -->
+               <div class="menu">
+                  <ul>
+                     <li><a href="#" style="text-decoration: none;">Home</a></li>
+                     <li><a href="#" style="text-decoration: none;">About</a></li>
+                     <li><a href="#" style="text-decoration: none;">Incentive</a></li>
+                     <li><a href="#" style="text-decoration: none;">Problem Statement</a></li>
+                     <li><a href="#" style="text-decoration: none;">Rules</a></li>
+                     <li><a href="#" style="text-decoration: none;">FAQs</a></li>
+                     <li><a href="#" style="text-decoration: none;">Sponsors</a></li>
+                  </ul>
+               </div>
+            </nav>
+
+
+    <div class="container" style="width:100%;height: 500px;top: 90px;"></div>
+    <div style="background-color: #bcd4d8;padding-top: 20px;margin-bottom: 30px;">
+      <div class="col-md-12" style="text-align: center !important;"><h3 style="font-size:42px;margin-top: 20px;">Incentives</h3></div>
+      <div class="row" style="padding: 15px;">
+      <div class="col-md-6" style="text-align: left;margin-bottom: 30px;padding: 85px;padding-bottom: 10px;padding-top: 10px;">
+        <h4 style="font-size: 42px;">Hardware Category</h4>
+        <ul>
+          <li><h6>Total Prizes worth INR 1,50,000.</h6></li>
+          <li><h6>Free TI components worth $60 for all participants at the Hackathon.</h6></li>
+          <li><h6>Pre-Hackathon workshop and mentoring for all the participants at the Hackathon.</h6></li>
+          <li><h6>Incubation opportunities at Computer Society of India.</h6></li>
+          <li><h6>Chance to meet many corporate heads & investors.</h6></li>
+        </ul>
+      </div>
+      <div class="col-md-6 " style="text-align: left;margin-bottom: 30px;padding: 85px;padding-bottom: 10px;padding-top: 10px;">
+        <h4 style="font-size: 42px;">Software Category</h4>
+        <ul>
+          <li><h6>Total Prizes worth INR 1,00,000.</h6></li>
+          <li><h6>Incubation opportunities at Computer Society of India</h6></li>
+          <li><h6>Chance to meet many corporate heads & investors</h6></li>
+          <!-- <li><h6>Incubation opportunities at Computer Society of India.</h6></li>
+          <li><h6>Chance to meet many corporate heads & investors.</h6></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-12" style="text-align: center !important;"><h3 style="font-size:42px;margin-top: 20px;">Problem Statement</h3></div>
+      <div class="row" style="padding: 15px;">
+      <div class="col-md-6" style="text-align: left;margin-bottom: 30px;padding: 85px;padding-bottom: 10px;padding-top: 10px;">
+        <h4 style="font-size: 42px;">Hardware Category</h4>
+        <button type="button" class="btn btn-outline butt" style="padding: 15px;margin-top: 20px;box-shadow: none;">Problem Statement</button>
+      </div>
+      <div class="col-md-6 " style="text-align: left;margin-bottom: 30px;padding: 85px;padding-bottom: 10px;padding-top: 10px;">
+        <h4 style="font-size: 42px;">Software Category</h4>
+        <button type="button" class="btn btn-outline butt" style="padding: 15px;margin-top: 20px;box-shadow: none;">Problem Statement</button>
+      </div>
+    </div>
+    </div>
+
+    <div style="background-color: #bcd4d8;padding-top: 20px;margin-bottom: 30px;padding-bottom: 20px;">
+      <div class="col-md-12" style="text-align: center !important;"><h3 style="font-size:42px;margin-top: 20px;">General Rules</h3></div>
+      <div class="row" style="padding: 15px;width: 85%;margin: auto;border: 1px solid #1f1f21;border-radius: 16px;margin-bottom: 20px;">
+      <div class="col-md-12" style="text-align: center;margin-bottom: 30px;padding: 5%;padding-bottom: 10px;padding-top: 10px;">
+        <h4 style="font-size: 42px;">Hardware Category</h4>
+        <ul>
+          <li style="text-align: left;"><h6>Every team participating in the Hardware Track must use/include Texas Instruments microprocessor/controller in their prototype. Every important component used must be disclosed before coming at the hackathon.</h6></li>
+          <li style="text-align: left;"><h6>Prototyping facilities will be available for both students and professionals free of cost upto a certain limit. All the teams must inform beforehand the prototyping facilities which will be required for the hackathon.</h6></li>
+          <li style="text-align: left;"><h6>Any team can order a fixed budget of TI Components ($60) worth free of cost. If it exceeds the amount, they are liable to pay the remaining cost. Items covered under fixed budget are marked separately.</h6></li>
+          <li style="text-align: left;"><h6>E-Cell IIT Bombay reserves the right to change and cancel any point/clause/prize any time.</h6></li>
+          <li style="text-align: left;"><h6>Not everyone who is registering for the hackathon will be invited to IIT Bombay. Based on the inputs provided in the registration form, selected teams would be invited.</h6></li>
+          <li style="text-align: left;"><h6>All the teams must submit the list of items (including TI components worth $60 free of cost) before 19th January, 2018 if they are bringing with them at the venue for the hackathon. Any non disclosed items would not be allowed in the event. Teams however can bring their own laptops/mouse/keyboards without disclosure.</h6></li>
+          <li style="text-align: left;"><h6>Each team must submit the preferred list of items in the registration form itself. If any changes are there for TI components, Teams must communicate to us at ihack@ecell.in on or before 22nd January, 2018.</h6></li>
+          <li style="text-align: left;"><h6>All queries must be redirected to ihack@ecell.in with the subject "i-Hack query"</h6></li>
+          <li style="text-align: left;"><h6>Teams are forbidden to build anything from before.</h6></li>
+        </ul>
+      </div>
+      <div class="col-md-12 " style="text-align: center;margin-bottom: 30px;padding: 5%;padding-bottom: 10px;padding-top: 10px;">
+        <h4 style="font-size: 42px;">Software Category</h4>
+        <ul>
+          <li style="text-align: left;"><h6><a href="#" style="text-decoration: none;">Click Here</a> to view Problem Statements of Pepipost Track.</h6></li>
+          <li style="text-align: left;"><h6>Software category includes building webpages,app on IOS, Android or any other platform.</h6></li>
+          <li style="text-align: left;"><h6>Software category includes the theme <strong>Pepipost Track</strong></h6></li>
+          <li style="text-align: left;"><h6>Not everyone who are registering for the hackathon will be invited to IIT Bombay. Based on the inputs provided in the registration form selected teams would be invited.</h6></li>
+          <li style="text-align: left;"><h6>All queries must be redirected to ihack@ecell.in with the subject "i-Hack query"</h6></li>
+          <li style="text-align: left;"><h6>The teams are free to use any tools and develop any application under the given topics.</h6></li>
+          <li style="text-align: left;"><h6>Teams are forbidden to build anything from before</h6></li>
+          <li style="text-align: left;"><h6>E-Cell IIT Bombay reserves the right to change and cancel any point/clause/prize any time.</h6></li>
+          <li style="text-align: left;"><h6>Once you have registered for a particular track you will not be allowed to change it. So think twice before opting the track.</h6></li>
+          <li style="text-align: left;"><h6>You can find the problem statement here.</h6></li>
+        </ul>
+      </div>
+    </div>
+    
+    </div>
+
+    <!-- <div class="col-md-12" style="text-align: center !important;margin-bottom: 20px;"><h3 style="font-size:42px;">Schedule</h3></div>
+      <div class="col-md-12" style="padding: 20px;text-align: center;">
+        <button type="button" class="btn btn-outline butt" style="background-color: transparent;border: 1px solid #022472;outline: none;border-radius: 2px;" onclick="chng(Event,'Date_1')" >
+          <h4 style="margin-bottom: 0px;">April 10, 2018</h4>
+        </button>
+        <button type="button" class="btn btn-outline butt" style="background-color: transparent;border: 1px solid #022472;outline: none;border-radius: 2px;" onclick="chng(Event,'Date_2')" >
+          <h4 style="margin-bottom: 0px;">April 11, 2018</h4>
+        </button>
+      </div>
+      
+
+      <div id="Date_1" class="container date" style="text-align: center;margin-bottom: 20px;" >
+        <table class="schedule" style="margin: auto;">
+          <tr>
+            <th style="font-family: serif;">qwer</th>
+            <th><strong>11:30</strong></th>
+            <th><strong>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</strong></th>
+          </tr>
+          <tr>
+            <th>qwer</th>
+            <th>11:30</th>
+            <th>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</th>
+          </tr>
+          <tr>
+            <th>qwer</th>
+            <th>11:30</th>
+            <th>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</th>
+          </tr>
+          <tr>
+            <th>qwer</th>
+            <th>11:30</th>
+            <th>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</th>
+          </tr>
+          <tr>
+            <th>qwer</th>
+            <th>11:30</th>
+            <th>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</th>
+          </tr>
+        </table>
+      </div>
+      <div id="Date_2" class="container date" style="text-align: center;display: none;margin-bottom: 20px;">
+        <table class="schedule" style="margin: auto;">
+          <tr>
+            <th>qwer</th>
+            <th><strong>10:30</strong></th>
+            <th><strong>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</strong></th>
+          </tr>
+          <tr>
+            <th>qwer</th>
+            <th>11:30</th>
+            <th>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</th>
+          </tr>
+          <tr>
+            <th>qwer</th>
+            <th>11:30</th>
+            <th>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</th>
+          </tr>
+          <tr>
+            <th>qwer</th>
+            <th>11:30</th>
+            <th>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</th>
+          </tr>
+          <tr>
+            <th>qwer</th>
+            <th>11:30</th>
+            <th>qwertyuioplkjhgfdsazxcvbnm mnbvcxzasdfghjkl mnjhyu nbvfcgfrdft</th>
+          </tr>
+        </table>
+      </div> -->
+      <div class="container" style="text-align: center;">
+        <div class="col-md-12" style="text-align: center !important;margin-bottom: 20px;"><h3 style="font-size:42px;">FAQs</h3></div>
+      <!-- <button  class="question btn btn-outline">Question 1</button>
+      <div class="answer container"><p>Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 </p></div>
+      <button class="question">Question 1</button>
+      <div class="answer container"><p>Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 </p></div>
+      <button class="question">Question 1</button>
+      <div class="answer container"><p>Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 Answer 1 </p></div> -->
+      <div style="margin-bottom: 50px;">
+      <button class="accordion">Who can attend ?</button>
+<div class="panel">
+  <p>Current students of any college of India as well as working professionals.</p>
+</div>
+
+<button class="accordion">How big teams can be?</button>
+<div class="panel">
+  <p>A team should contain 3-4 members. Individuals can also register in the hackathon but however they won’t be allowed to participate individually. Selected individuals would be invited to the finals at IIT Bombay and they would be clubbed in teams.</p>
+</div>
+
+<button class="accordion">Are you providing travel imbursements?</button>
+<div class="panel">
+  <p>Unfortunately, we are not able to provide travel reimbursements.</p>
+</div>
+
+<button class="accordion">How much does it cost?</button>
+<div class="panel">
+  <p>This event is completely free! We’ll provide you with a plethora of resources and tools to hack with.</p>
+</div>
+
+<button class="accordion">What should I bring to the venue?</button>
+<div class="panel">
+  <p>You need to carry your ID Card to check-in. You could also bring your laptop for hacking. You can also feel free to bring in any of the materials that we approve. You have to send us an email listing the materials you will be bringing to hackathon on or before 24th January 2017 to get them approved. You will not be allowed to bring anything that has not been pre-approved.</p>
+</div>
+</div>
+      </div>
+
+<section class="py-5" style="background-color: white;">
+  <div class="col-md-12" style="text-align: center;margin-bottom: 30px;"><h3 style="font-size: 42px;">Sponsors</h3></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6" style="background-color: transparent;">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/Big.jpeg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/Gator.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/Computer.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/Tech.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6" style="margin-top: 40px;">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/Geek.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/Idefi.jpeg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/Pepi.jpeg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="img/logos/Texas.jpeg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Your Website 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <-- Optional JavaScript -->
+    <script>
+      // $(document).ready(function(){
+      //   $(".menu-link").on("click",function(){
+      //     $("nav ul").toggleClass("active");
+      //   })
+      // })
+       $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      function chng(evt,datE){
+        var dates;
+        var i;
+        dates=document.getElementsByClassName("date");
+        for(i=0;i<dates.length;i++){
+          dates[i].style.display="none";
+        }
+        document.getElementById(datE).style.display="block";
+        
+      }
+      // var q=document.getElementsByClassName("question");
+      // var a=document.getElementsByClassName("answer");
+      // var i;
+
+      // for(i=0; i < q.length ;i++){
+      //   q[i].addEventListener("click",function(){
+      //     var k=i;
+      //     var j=0;
+      //     var h=0;
+      //     while((j!=k)&&(j<q.length)){
+      //       q[j].classList.remove("select");
+      //       j++;
+      //     }
+      //     // for(h=0; h < a.length ;h++){
+      //     //   if (h!=k) {
+      //     //   a[h].style.maxHeight=null;
+      //     // }
+      //     // }
+
+      //     this.classList.toggle("select");
+      //     var panel=this.nextElementSibling;
+      //     if(panel.style.maxHeight){
+      //       panel.style.maxHeight = null;
+      //     }
+      //     else{
+      //       panel.style.maxHeight = panel.scrollHeight + "px";
+      //     }
+      //   });
+      // }
+      var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+      
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/agency.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+  </body>
+</html>
